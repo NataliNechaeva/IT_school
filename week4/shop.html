@@ -12,39 +12,94 @@
 <link rel="stylesheet" href="assets/styles/style.css">  
 </head>
 <body>
-    <header><img class = "logotype" src="assets/images/Frame.png" alt="logo"  > <div class ="Logo"> THE LOOP </div> </header>
-    <nav ><a class="menu" href="index.html">Для мужчин</a>
+    <header>
+    <nav class="flexcontainerheader"><a class="menu" href="index.html">Для мужчин</a>
         <a class="menu" href="cat.html">Для женщин</a>
         <a class="menu" href="index.html">Для детей</a>
+        <img class = "logotypemenu" src="assets/images/Frame.png" alt="logo"  > <div class ="Logo"> THE LOOP </div> 
         <a class="menu" href="forms.html">Оплата</a>
         <a class="menu" href="index.html">Доставка</a>
         <a class="menu" href="index.html">
-        <img src="assets/images/Vector.png" alt="Корзина" style="width: 1%;">
-        <img src="assets/images/Group6.png" alt="Указатель" style="width: 1%;"></a></nav>
+        <img src="assets/images/Vector.png" alt="Корзина" style="width: 40%;">
+        <img src="assets/images/Group6.png" alt="Указатель" style="width: 40%;"></a></nav></header>
     <main>
         <article>
-            <h2> Зимняя распродажа <br></h2>
-            <div id=discount> СКИДКИ ДО 90% </div>
-            <object data="assets/images/running.png" type="image/png"></object> <br>
-            <div class = "Logo" style="text-decoration: line-through;" >9900 Р</div> <br>   
-            <div id=newprice>1900 Р</div>
-            <button style="background-color: #D7B399; width: 240px; height: 55px;">СМОТРЕТЬ МОДЕЛИ</button>
-            <section style="background-color: black;">
+            <section class="firstpage">
+                <div class="firstpage1">
+                    <h2> Зимняя распродажа </h2>
+                    <p id=discount>СКИДКИ ДО 90%</p>
+                    <button style="background-color: #D7B399; width: 240px; height: 55px;">СМОТРЕТЬ МОДЕЛИ</button></div>
+                <div class="firstpage2"> <img style="margin: 2px 2px 0px 0px; float:left;" src="assets/images/running.png" alt="">
+                <p id="Logo1"> 9900 Р</p>
+                <p id="newprice"> 1900 Р</p>
+                </div>
+            </section>
+            <section class="firstpageblack">
             <h3 style="color: rgba(255, 255, 255, 1);">БEСПЛАТНАЯ ДОСТАВКА ОТ 3000 Р</h3>
             <div id="offer">Сделайте заказ и получите подарок!</div></section> 
+            <section class="collection">
+                <div class="collektiontext">
+                    <h4>Мужская коллекция</h4>
+                    Обувь, полуверы, костюмы <br> <br>
+                    <button style="background-color: rgba(215, 179, 153, 1);"><img src="assets/images/Arrow.png" alt=""></button></div>
+                <div class="collectoinpicture">
+                    <img src="assets/images/Rectangle3.png" alt=""></div>
+                <div class="collektiontext">
+                    <h4>Женская коллекция</h4>
+                    Обувь, полуверы, костюмы <br> <br>
+                    <button style="background-color: rgba(215, 179, 153, 1);"><img src="assets/images/Arrow.png" alt=""></button></div>
+                <div class="collectoinpicture">
+                    <img src="assets/images/Rectangle3.1.png" alt=""></div></section>
+                <section class="gifts">
+                    <h3 style="color: rgba(255, 255, 255, 1);">ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ</h3>
+                    <input type="email" name="login" value="Ваш E-mail">
+                    <button style="background-color: #D7B399; width: 240px; height: 55px;">Подписаться</button>
+        </section>
             <section >
-                <h4>Мужская коллекция</h4>
-                Обувь, полуверы, костюмы <br>
-                <img src="assets/images/Rectangle3.png" alt=""></section>
-                <button style="background-color: rgba(215, 179, 153, 1);"><img src="assets/images/Arrow.png" alt=""></button>
-            <section id="clothes">
-                <h4>Женская коллекция</h4>
-                Обувь, полуверы, костюмы <br>
-                <button style="background-color: rgba(215, 179, 153, 1);"><img src="assets/images/Arrow.png" alt=""></button>
-                <img src="assets/images/Rectangle3.1.png" alt=""></section>
-                <section style="background-color: black;">
-                    <h3 style="color: rgba(255, 255, 255, 1);">ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ</h3><input type="email" name="login" value="Ваш E-mail">
-        </section></article></main>
-    <footer><img class = "logotype" src="assets/images/Frame.png" alt="logo"><div class ="Logo"> THE LOOP </div></footer>
+                <h2 class="discountH2"> Скидки до 90% </h2>
+            <div class="discountdress">
+                <div class = "dress">
+                <img src="assets/images/Rectangle2.png" alt="">
+                <h3>Коктейльное платье</h3>
+                <p id="dressprice"> P 40 000 </p></div>
+            <div class = "dress">
+                <img src="assets/images/Rectangle2.png" alt="">
+                <h3>Коктейльное платье</h3>
+                <p id="dressprice"> P 40 000 </p>
+            </div>
+            <div class = "dress">
+                <img src="assets/images/Rectangle2.png" alt="">
+                <h3>Коктейльное платье</h3>
+                <p id="dressprice"> P 40 000 </p>
+            </div>
+            <div class = "dress">
+                <img src="assets/images/Rectangle2.png" alt="">
+                <h3>Коктейльное платье</h3>
+                <p id="dressprice"> P 40 000 </p>
+            </div></div>
+        </section>
+    </article></main>
+    <footer class="flexcontainerfooter">
+        <div class="logoconteiner"><img style="width: 20pt; height: 20pt;" src="assets/images/Frame.png" alt="logo"><div class ="Logo" style="color: white;"> THE LOOP </div></div>
+    <div class="footerflex">
+        <h5> Основные ссылки</h5>
+        <p>О компании</p>
+        <p>Каталог</p>
+        <p>Доставка</p>
+        <p>Оплата</p></div>
+    <div class="footerflex"><h5>Категории</h5>
+    <p>Мужская одежда</p>
+    <p>Детская одежда</p>
+    <p>Женская одежда</p>
+    <p>Для животных</p></div>
+    <div class="footerflex"><h5>Полезные ссылки</h5>
+    <p>Таблица размеров</p>
+    <p>Блог о моде</p>
+    <p>Наша миссия</p></div>
+    <div class="footerflex"><h5>СОЦ СЕТИ</h5>
+    <p>VK.com</p>
+    <p>Facebook</p>
+    <p>Instagram</p></div>
+    </footer>
 </body>
 </html>

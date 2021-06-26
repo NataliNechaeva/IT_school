@@ -15,7 +15,21 @@
         text-transform: uppercase;
         text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
         color: black;}
+        #Logo1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+            color: black; 
+            text-decoration-line: line-through;   
+        }
         .menu {
+        justify-content: space-around;
+        margin: 0 15px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -32,13 +46,8 @@
         font-style: normal;
         font-size: 30px;
         line-height: 37px;
-        letter-spacing: 0.02em;
-        color: black;}
+        letter-spacing: 0.02em;}
         h4 {
-        width: 366px;
-        height: 22px;
-        left: 996px;
-        top: 1096px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -50,10 +59,6 @@
         h4::selection {color: blue; 
         background: burlywood;}
         #discount {
-        width: 570px;
-        height: 51px;
-        left: 405px;
-        top: 313px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-style: normal;
@@ -63,17 +68,12 @@
         text-transform: uppercase;
         color: black;}
         #newprice {
-        width: 163px;
-        height: 51px;
-        left: 1352px;
-        top: 299px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 42px;
         line-height: 51px;
         letter-spacing: 0.02em;
-        text-transform: uppercase;
         color: rgba(216, 64, 51, 1);} 
         button {
         width: 181px;
@@ -88,28 +88,20 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 1);} 
         #offer {
-        width: 394px;
-        height: 26px;
-        left: 762px;
-        top: 940px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         font-style: normal;
         font-size: 21px;
         line-height: 26px;
-        color: rgba(255, 255, 255, 1);
-        background-color: black;} 
+        color: rgba(255, 255, 255, 1);} 
         #clothes {
-        width: 229px;
-        top: 1143px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         font-style: normal;
         font-size: 16px;
         line-height: 20px;} 
         input {
-        width: 171px;
-        top: 2790px;
+        height: 50px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         font-style: normal;
@@ -117,3 +109,90 @@
         line-height: 15px;
         letter-spacing: 0.02em;
         background-color: rgba(249, 246, 241, 1);}
+        .flexcontainerheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 content; 
+        height: 7em;
+        background: #F9F6F1;
+        }
+        #dressprice {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 51px;
+            letter-spacing: 0.02em;
+            color: rgba(215, 179, 153, 1);}     
+        
+        .flexcontainerfooter {
+            flex-shrink: 0;
+            display: flex;
+            flex: 0 0 content;
+            justify-content: space-around;
+            padding: 0 10%; 
+            background-color: black;
+        }
+        .firstpage {
+        display: flex;
+        flex: 1;
+        }
+        .firstpage1 {
+            flex: 50%;
+            background-color: #F9F6F1;
+            padding: 5em;
+        }
+        .firstpage2 {
+            flex: 50%;
+            background-color: #F9F6F1;
+            padding: 20px;
+        }
+        .firstpageblack {
+            display: flex;
+            background-color: black;
+            width: 100%;
+            height: 12vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .collection {
+            display: flex;
+            justify-content: center;
+            background-color: #F9F6F1;
+            }
+        .gifts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            }
+        .discountdress {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .discountH2 {
+            display: flex;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 55px;
+            line-height: 67px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: black;}
+        .footerflex {
+            font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 21px;
+        line-height: 26px;
+        color: rgba(255, 255, 255, 1);} 
+        .logoconteiner {
+            display: flex;
+            align-items: center;
+        }
+

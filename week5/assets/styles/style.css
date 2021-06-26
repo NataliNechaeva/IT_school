@@ -1,0 +1,77 @@
+body {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2pt;
+    color: black;
+}
+header {
+    display: table;
+    width: 100%;
+    line-height: 10em;
+    background: grey;
+}
+article {
+    float: left;
+    width: 70%;
+    height: 40em;
+    background: burlywood;
+}
+aside {
+    float: right;
+    width: 30%;
+    height: 40em;
+    background-color: darkcyan;
+    }
+footer {
+        clear: both;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+section {           
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2pt;
+}
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.flexs {
+    display:flex;
+    flex-basis: 40%;
+    height: 10em;
+    margin: 200px 5% 10px 5%;
+    flex-wrap: wrap;
+    background-color: darkred;
+    justify-content: center;
+    align-items: center
+}
+.flexsw {
+    display:flex;
+    flex-basis: 100%;
+    height: 10em;
+    margin: 100px 5% 10px 5%;
+    flex-wrap: wrap;
+    background-color: darkred;
+    justify-content: center;
+    align-items: center
+}
+.flexcontainerf {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around; 
+    background-color: gray;
+}
+.flexf {
+    display: flex;
+    align-self: center;
+    height: 5em;
+    margin: 1% 5% 1% 5%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
