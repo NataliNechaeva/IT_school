@@ -11,6 +11,9 @@ header {
     line-height: 10em;
     background: grey;
 }
+footer {
+    clear: both;
+}
 article {
     float: left;
     width: 70%;
@@ -22,12 +25,6 @@ aside {
     width: 30%;
     height: 40em;
     background-color: darkcyan;
-    }
-footer {
-        clear: both;
-        height: 100%;
-        position: absolute;
-        bottom: 0;
     }
 section {           
     text-align: center;
@@ -62,16 +59,14 @@ section {
 }
 .flexcontainerf {
     display: flex;
-    flex-direction: row;   
-    justify-content: space-around; 
+    height: 20vh;
+    justify-content: space-between; 
     background-color: gray;
 }
 .flexf {
-    display: flex;
     align-self: center;
     height: 5em;
     margin: 1% 5% 1% 5%;
     background-color: white;
-    justify-content: center;
     align-items: center;
 }
