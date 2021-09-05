@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addition ();">Сложение</button>
+    <button onclick="subtraction ();">Вычитание</button>
+    <button onclick="multiplication ();">Умножение</button>
+    <button onclick="division ();">Деление</button>
+
+    <script>
+        function addition () {
+            let sumfirst=prompt ('Введите первое число?', '');
+            let sumsecond=prompt ('Введите второе число?', '');
+            let result = Number(sumfirst)+Number(sumsecond);
+            alert(`Результат сложения: ${result}`)
+}
+function subtraction () {
+            let subfirst=prompt ('Введите первое число?', '');
+            let subsecond=prompt ('Введите второе число?', '');
+            let result = Number(subfirst)-Number(subsecond);
+            alert(`Результат вычитания: ${result}`)
+}
+function multiplication () {
+            let mulfirst=prompt ('Введите первое число?', '');
+            let mulsecond=prompt ('Введите второе число?', '');
+            let result = Number(mulfirst)*Number(mulsecond);
+            alert(`Результат умножения: ${result}`)
+}
+function division () {
+            let divfirst=prompt ('Введите первое число?', '');
+            let divsecond=prompt ('Введите второе число?', '');
+            let result = Number(divfirst)/Number(divsecond);
+            alert(`Результат деления: ${result}`)
+}
+    </script>
+</body>
+</html>
