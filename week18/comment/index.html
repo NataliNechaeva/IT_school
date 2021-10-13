@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chat</h1>
+    <div id="chat"></div>
+    <form>
+        <div>
+            <label for="author">Имя*
+                <span id="authorError"></span>
+            </label>
+        </div>
+        <div>
+            <input type="text" name="author" id="author" class="inputs" value="">
+        </div>
+
+    <div>
+        <img id="img_avatar" src="image/femaleheadshot.png" alt="Avatar" height="100px"></br>
+        <input type="file" id="file" value="">
+    </div>
+    <div>
+        <label for="comment">Комментарий:
+            <span id="commentError"></span>
+        </label>
+    </div>
+    <div>
+        <textarea name="comment" id="add_comment" class="inputs" cols="30" rows="10"></textarea>
+    </div>
+    <input type="button" name="Send" id="btn_add_comment" onclick="checkMessage ()" value="Отправить">
+    <input type="button" name="Clear" id="btn_clear_comment" value="Очистить"> <br>
+</form>
+    <script src="index.js"></script>
+</body>
+</html>
