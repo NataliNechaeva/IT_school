@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1998/1998592.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Анкета владельца котика</h1>
+    <img src="https://img.smi2.net/470x246/85505a4e44a484759658d3b24186739824a0ea2b.jpg?u=aHR0cHM6Ly9mcm9tLXVhLmNvbS91cGxvYWQvYXJ0aWNsZXMvMjAxOS8wNi8yMi9zbWFsbC8xNTYxMTgxNTg2XzEzLmpwZWc" alt="">
+    <form>
+    <fieldset>
+        <legend>Расскажи о себе</legend>
+        <div>
+        <label for="name">E-mail</label>
+        <input type="text" id="name" style="position: absolute; left: 15%;" required></div>
+    <div>
+        <label for="email">Фамилия</label>
+        <input type="email" id="email" style="position: absolute; left: 15%;" required></div>
+    <div>
+        <label for="age">Возраст</label>
+        <input type="number" id="age" style="position: absolute; left: 15%;" min="10" max="100" required></div>
+    <div>
+        <label for="country">Страна</label>
+        <input type="text" id="country" style="position: absolute; left: 15%;"></div>
+    <div>
+        <label for="city">Город</label>
+        <input type="text" id="city" style="position: absolute; left: 15%;"></div>  
+    <div>
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" style="position: absolute; left: 15%;" pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/" minlength="10" maxlength="20"></div>    
+    </fieldset>
+    <fieldset> 
+    <legend>Расскажи о питомце</legend>
+    <div>
+        <label for="nickname">Кличка</label>
+        <input type="text" id="nickname" style="position: absolute; left: 15%;" required></div> 
+        <label for="breed">Порода кота</label>
+        <select name="breed" id="breed" style="position: absolute; left: 15%;">
+            <option value="Ab">Аббисинская</option>
+            <option value="Az">Азиатская</option>
+            <option value="Bir">Бирманская</option>
+            <option value="br">Британская</option>
+            <option value="Dv">Девон-рекс</option>
+            <option value="Sf">Донской сфинкс</option>
+            <option value="Eg">Египетская</option>
+            <option value="Kr">Керл</option>
+            <option value="Mk">Мейн-кун</option>
+            <option value="Ie">Эльф</option>
+    </select>
+    <div>
+        <label for="food">Чем питается:</label> <br>
+        <input type="checkbox" name="food" id="food" >Сухой корм<br><input type="checkbox" name="food"> Влажный корм <br><input type="checkbox" name="food"> Смешанный корм </div>
+    <div>
+        <label>Пол питомца:</label> <br>
+        <input type="radio" name="sex">Самец <br><input type="radio" name="sex">Самка </div>
+    <div>
+        <label>Введите комментарий</label> <br>
+        <textarea name="comments" cols="30" rows="10"></textarea></div>
+    <div>
+        <label>Приложите фото вашего котика</label> <br>
+        <input type="file"></div>
+    </fieldset>
+    <div>
+        <input type="button" name="Save" value="Сохранить"></div>  
+    </form>                                                               
+</body>
+</html>

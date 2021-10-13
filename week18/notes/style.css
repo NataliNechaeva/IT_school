@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    background: rosybrown;
+}
+
+#container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+
+.card {
+    background-color: seashell;
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    /*   border: 1px solid #CCC; */
+    margin: 40px 0;
+    perspective: 600px;
+}
+
