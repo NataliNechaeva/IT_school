@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="FirstNumber">Введите первое число</label>
+<p>
+    <input type="number" name="NumberFirst" id="FirstNumber" placeholder="Первое число"></p>
+<p>
+    <label for="SecondNumber">Введите второе число</label>
+<p>
+    <input type="number" name="NumberSecond" id="SecondNumber" placeholder="Второе число"></p>
+<p>
+    <input type="button" name="Sum" value="Сложить" onclick="Summing ()">
+    <input type="button" name="Sub" value="Вычесть" onclick="Subtraction ()">
+    <input type="button" name="Multi" value="Умножить" onclick="Multiplication ()">
+    <input type="button" name="Div" value="Разделить" onclick="Division ()">
+</p>
+
+<div id="allresult"></div>   
+<script src="index.js"></script>
+</body>
+</html>
