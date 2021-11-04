@@ -1,0 +1,61 @@
+1. [https://www.wildberries.ru/catalog/0/search.aspx?sort=popular&search=платье+офисное](https://www.wildberries.ru/catalog/0/search.aspx?sort=popular&search=%D0%BF%D0%BB%D0%B0%D1%82%D1%8C%D0%B5+%D0%BE%D1%84%D0%B8%D1%81%D0%BD%D0%BE%D0%B5)
+
+все офисные платья на сайте
+
+[https://yandex.ru/images/search?text=хакасия](https://yandex.ru/images/search?text=%D1%85%D0%B0%D0%BA%D0%B0%D1%81%D0%B8%D1%8F) 
+
+Хакасия  в Яндекс.Картинках
+
+2. Метод get - это передача данных на сервер через строку запроса. Эти данные можно видеть в строке после знака вопроса. А post - это передача данных на сервер через переменные окружения. Обычно, это данные заполненной веб-формы. Их не видно
+3. GET-запрос
+4. POST-запрос
+5.  
+- api_key - API-ключ GIPHY
+- q - Термин или фраза поискового запроса. Поисковые запросы могут быть просто словами или фразами, введенными пользователем.
+- limit - Максимальное количество возвращаемых объектов. (По умолчанию: “25”).
+- lang - для указания языка, введенного пользователем. Это поможет вернуть уникальный региональный контент, если таковой имеется
+
+[https://api.giphy.com/v1/gifs/search?api_key=SET_KEY_HERE&q=cats&limit=5&offset=0&rating=g&lang=en](https://api.giphy.com/v1/gifs/search?api_key=SET_KEY_HERE&q=cats&limit=5&offset=0&rating=g&lang=en) — запрос возвращает не 25, а 5 картинок
+6. Открываем нужную страницу, нажимаем F12 и открываем консоль. Далее, в консоли выбираем Network, после этого, можно будет посмотреть заголовки
+7. 
+
+let response = await fetch('https://site.com/service.json', {
+  method: 'PATCH',
+  headers: {
+    'Content-Type': 'application/json'
+    'API-Key': 'secret'
+  }
+});
+
+8. `application/x-www-form-urlencoded`, `multipart/form-data` или `text/plain`
+9. 
+
+let dog = {
+
+breed: "Beagle",
+
+size: "large",
+
+color: "orange",
+
+age: 6
+
+}
+
+fetch(`localhost/pets/add,` 
+
+{
+
+method: 'POST',
+
+body: JSON.stringify(dog),
+
+headers: {
+
+'Content-type': 'application/json; charset=utf=8'
+
+},
+
+})
+
+10. **Промис — это объект, представляющий окончательное завершение или сбой асинхронной операции. По сути, промис — это возвращаемый объект, к которому прикрепляется колбэк, вместо его передачи в функцию.**
