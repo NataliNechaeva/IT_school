@@ -1,0 +1,30 @@
+.invisible {
+    display: none;
+}
+button {
+    color: brown;
+}
+@import '~antd/dist/antd.css';
+
+.site-card-border-less-wrapper {
+  padding: 30px;
+  background: #ececec;
+  text-align: center;
+}
+  [data-theme="dark"] .site-card-border-less-wrapper {
+    background: #303030;
+  }
+
+  .translate {
+    display: none;
+}
+.visibletranslate {
+    display: block;
+}
+site-card-border-less-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  justify-content: center;
+  background-color: red;
+}
