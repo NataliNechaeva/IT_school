@@ -17,30 +17,23 @@ const rates = [{
   price: "550 руб/мес",
   value: "до 100 Мбит/сек",
   description: "Объем включенного трафика не ограничен",
-  isSelected: true
 },{
   title: "Безлимитный 1000",
   price: "1000 руб/мес",
   value: "до 200 Мбит/сек",
   description: "Объем включенного трафика не ограничен"
 }];
-const myStyle = {
-  width: 200,
-  height: 50,
-	fontSize: '1.5 em',
-  backgroundColor: 'red',
-};
+
 
 function App(){
   return(
     <div className="wrapper">
       {
         rates.map((rate) => 
-        <Rate title={rate.title} price={rate.price} value={rate.value} description={rate.description} isSelected={rate.isSelected}></Rate>
+        <Rate title={rate.title} price={rate.price} value={rate.value} description={rate.description}></Rate>
         )
       }
-
-    </div>);
+    </div>)
 }
 
 
