@@ -42,7 +42,7 @@ const EditableCell = ({
     const [data, setData] = useState(originData);
     const [editingKey, setEditingKey] = useState('');
   
-    const isEditing = (record) => record.key === editingKey;
+    const isEditing = (record) => record.id === editingKey;
   
     const edit = (record) => {
       form.setFieldsValue({
@@ -51,18 +51,18 @@ const EditableCell = ({
         russian: '',
         ...record,
       });
-      setEditingKey(record.key);
+      setEditingKey(record.id);
     };
   
     const cancel = () => {
       setEditingKey('');
     };
   
-    const save = async (key) => {
+    const save = async (id) => {
       try {
         const row = await form.validateFields();
         const newData = [...data];
-        const index = newData.findIndex((item) => key === item.key);
+        const index = newData.findIndex((item) => id === item.id);
   
         if (index > -1) {
           const item = newData[index];
@@ -106,7 +106,7 @@ const EditableCell = ({
           return editable ? (
             <span>
               <Typography.Link
-                onClick={() => save(record.key)}
+                onClick={() => save(record.id)}
                 style={{
                   marginRight: 8,
                 }}
