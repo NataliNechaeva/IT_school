@@ -11,7 +11,7 @@ const CommentList = ({ comments }, style) => (
     dataSource={comments}
     header={`${comments.length} ${comments.length > 1 ? 'replies' : 'reply'}`}
     itemLayout="horizontal"
-    renderItem={props => <Comment {...props} style={style}/>}
+    renderItem={props => <Comment {...props} className="color"/>}
     
   />
 );
@@ -47,7 +47,7 @@ class Chat extends React.Component {
       this.setState({
         submitting: false,
         value: '',
-        style: {backgroundColor: 'red'},
+        style: {backgroundColor: 'beige'},
         comments: [
           ...this.state.comments,
           {
