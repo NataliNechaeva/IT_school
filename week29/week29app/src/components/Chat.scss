@@ -1,0 +1,8 @@
+@import '~antd/dist/antd.css';
+
+$random-color: rgb(random(256)-1, random(256)-1, random(256)-1);
+
+.color {
+        background: $random-color;
+        border: 4px double black;;
+    }
