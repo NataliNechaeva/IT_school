@@ -19,7 +19,7 @@ export default function CardButton(props) {
     
     return (
         <div className="site-card-border-less-wrapper">
-           <Card title={english} bordered={false} style={{ width: 300 }}>
+           <Card title={english} bordered={false} >
             <p className="word-transcription">{transcription}</p>
             <p className={`translate ${translateClass}`}>{russian}</p>
             <button className={`button ${buttonClass}`} {...props} onClick={handleChange} > Перевод </button></Card>

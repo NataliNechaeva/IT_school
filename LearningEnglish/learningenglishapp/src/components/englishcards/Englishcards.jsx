@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CardButton from '../CardButton/CardButton'
 import originData from '../../data'
 import { Pagination } from 'antd';
+import './EnglishCards.scss';
 
 
 
@@ -25,4 +26,4 @@ export default function EnglishCard() {
         transcription={cards.transcription}
         russian={cards.russian}/> 
         )
-    }</div> <div><Pagination simple defaultCurrent={1} total={lastCard} pageSize={1} onChange={onChange}/> </div></div> )}
+    }</div> <div className="pagination"><Pagination simple defaultCurrent={1} total={lastCard} pageSize={1} onChange={onChange}/> </div></div> )}
