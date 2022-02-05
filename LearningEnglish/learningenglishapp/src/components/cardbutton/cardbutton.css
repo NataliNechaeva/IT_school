@@ -1,9 +1,11 @@
 .invisible {
-    display: none;
+  display: none;
 }
+
 button {
-    color: #006d75;
+  color: #006d75;
 }
+
 .site-card-border-less-wrapper {
   padding: 30px;
   background: #e6fffb;
@@ -11,19 +13,20 @@ button {
   margin: auto;
   width: 50vw;
 }
-  [data-theme="dark"] .site-card-border-less-wrapper {
-    background: red;
-  }
 
-  .translate {
-    display: none;
-}
-.visibletranslate {
-    display: block;
-}
-Card {
+[data-theme="dark"] .site-card-border-less-wrapper {
   background: red;
 }
 
+.translate {
+  display: none;
+}
 
+.visibletranslate {
+  display: block;
+}
 
+Card {
+  background: red;
+}
+/*# sourceMappingURL=CardButton.css.map */
