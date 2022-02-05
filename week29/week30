@@ -1,0 +1,65 @@
+1. Будет отрисован элемент Home, так как происходит нестрогая проверка, и `path="/"` воспринимается алгоритмом как "всё что угодно после /". Необходимо перенести первую строку в конец
+2. Появится сообщение: “Моя личная страница”
+3. Метод `map` первым аргументом принимает элемент массива, а вторым его положение в нем. 
+4. Необходимо использовать метод filter
+5. Для этого нужны **динамические роуты в React. Н-р,**
+
+```
+<Route path="/user/:userId" component={UserPage} />
+
+**Тут :userId это динамические параметры роута. Он передается компоненту. Вы легко можете получить доступ к пропсам userId в компоненте UserPage.**
+6. 6.В отличие от elements children будет всегда отображаться  - независимо от того сопоставляется ли path или нет.
+
+7. Для строгой проверки адреса необходимо свойство exact
+8. `<Route />` принимает `path` в виде prop который описывает определенный путь и сопоставляется с location.pathname.
+
+Когда пути сопоставляются создается объект
+
+```
+match
+```
+
+который содержит свойства:
+
+- **url** — сопоставляемая часть текущего location.pathname
+- **path** — путь в компоненте Route
+- **isExact** — path в Route === location.pathname
+- **params** — объект содержит значения из path которые возвращает модуль path-to-regexp
+
+Каждый Router создает объект history, который хранит путь к текущему location[1] и перерисовывает интерфейс сайта когда происходят какие то изменения пути.
+
+Остальные функции предоставляемые в React Router полагаются на доступность объекта history через context, поэтому они должны рендериться внутри компонента Router.
+9. History object
+
+With **client side routing**, developers are able to manipulate the browser [history stack](https://reactrouter.com/docs/en/v6/getting-started/concepts#history-stack). For example, we can write some code like this to change the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) without the browsers default behavior of making a request to the server:
+
+`<a
+  href="/contact"
+  onClick={event => {
+    // stop the browser from changing the URL and requesting the new document
+    event.preventDefault();
+    // push an entry into the browser history stack and change the URL
+    window.history.pushState({}, undefined, "/contact");
+  }}
+/>`
+
+For illustration only, don't use `window.history.pushState` directly in React Router
+
+This code changes the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) but doesn't do anything for the UI. We would need to write some more code that changed some state somewhere to get the UI to change to the contact page. The trouble is, the browser doesn't give us a way to "listen to the URL" and subscribe to changes like this.
+Well, that's not totally true. We can listen for changes to the URL via [pop](https://reactrouter.com/docs/en/v6/getting-started/concepts#history-actions) events:
+
+`window.addEventListener("popstate", () => {
+  // URL changed!
+});`
+
+But that only fires when the user clicks the back or forward buttons. There is no event for when the programmer called `window.history.pushState` or `window.history.replaceState`.
+
+That's where a React Router specific `history` object comes into play. It provides a way to "listen for [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url)" changes whether the [history action](https://reactrouter.com/docs/en/v6/getting-started/concepts#history-actions) **push**, **pop**, or **replace**.
+
+`let history = createBrowserHistory();
+history.listen((location, action) => {
+  // this is called whenever new locations come in
+  // the action is POP, PUSH, or REPLACE
+});`
+
+Apps don't need to set up their own history objects--that's job of `<Router>`. It sets up one of these objects, subscribe to changes in the [history stack](https://reactrouter.com/docs/en/v6/getting-started/concepts#history-stack), and finally updates its state when the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) changes. This causes the app to re-render and the correct UI to display. The only thing it needs to put on state is a `location`, everything else works from that single object.
