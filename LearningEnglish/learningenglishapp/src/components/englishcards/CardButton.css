@@ -29,4 +29,11 @@ button {
 Card {
   background: red;
 }
-/*# sourceMappingURL=cardbutton.css.map */
+
+.button {
+  background: #e6fffb;
+  margin: auto;
+  width: 50vw;
+  text-align: center;
+}
+/*# sourceMappingURL=CardButton.css.map */
