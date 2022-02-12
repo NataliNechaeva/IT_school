@@ -1,0 +1,34 @@
+.invisible {
+    display: none;
+}
+button {
+    color: #006d75;
+}
+.site-card-border-less-wrapper {
+  padding: 30px;
+  background: #e6fffb;
+  text-align: center;
+  margin: auto;
+  width: 50vw;
+}
+  [data-theme="dark"] .site-card-border-less-wrapper {
+    background: red;
+  }
+
+  .translate {
+    display: none;
+}
+.visibletranslate {
+    display: block;
+}
+Card {
+  background: red;
+}
+.button {
+  background: #e6fffb;
+  margin: auto;
+  width: 50vw;
+  text-align: center;
+}
+
+
